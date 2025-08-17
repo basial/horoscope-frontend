@@ -32,6 +32,7 @@ describe("Horoscope App", () => {
   it("displays horoscope and percentage after fetch", async () => {
     render(<App />);
     const button = screen.getByText(/✨ s p r a w d z a m ✨/i);
+    window.HTMLElement.prototype.scrollIntoView = vi.fn();
 
     fireEvent.click(button);
 
@@ -40,6 +41,7 @@ describe("Horoscope App", () => {
         screen.getByText(/You will conquer all challenges today!/i)
       ).toBeInTheDocument();
       expect(screen.getByText(/Układ planetek sprzyja Ci w/i)).toBeInTheDocument();
+      expect(window.HTMLElement.prototype.scrollIntoView).toHaveBeenCalled();
     });
   });
 });
