@@ -1,12 +1,27 @@
-# React + Vite
+# 🔮 Horoscope Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Tests](https://github.com/basial/horoscope-fontend/actions/workflows/tests.yml/badge.svg)
 
-Currently, two official plugins are available:
+A ✨ s m o l ✨ full-stack project built to test **Node.js** and **React**.  
+It provides a simple [**API**](https://github.com/basial/horoscope-api) that serves random horoscopes in different tones, and a [**frontend**](https://github.com/basial/horoscope-frontend) that displays them with your luck percentage animation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✨ [**planetki.pl**](https://www.planetki.pl) ✨ 
+_First request might be slow, as Render goes to sleep when there is no traffic_
+
+- **API**: [Deployed to Render](https://horoscope-api-adcu.onrender.com/api/horoscope)  
+- **Frontend**: [Deployed to Netlify](https://incredible-monstera-6f0b64.netlify.app/)
+
+![planetki.pl](public/screenshot.png)
+
+---
+
+## 🛠️ Tech Stack
+- **Backend**: Node.js, Express  
+- **Frontend**: React, Vite, TailwindCSS  
+- **Testing**: Vitest, React Testing Library, Jest-DOM  
+- **Deployment**: Render (backend), Netlify (frontend)  
+- **CI/CD**: GitHub Actions  
