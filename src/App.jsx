@@ -25,7 +25,7 @@ function App() {
         setTimeout(() => {
           setHoroscope(data.message);
           setLoading(false);
-        }, 1500)
+        }, 0) // setTimeout if you want to admire the loding screen
       })
       .catch((err) => {
         console.error(err);
