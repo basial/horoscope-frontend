@@ -1,8 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { getSuccessPercentage } from "./utils/getSuccessPercentage";
 
 function Horoscope({ tone, horoscope }) {
   const [displayedPercentage, setDisplayedPercentage] = useState(0);
+  const resultRef = useRef(null);
 
   useEffect(() => {
     const percentage = getSuccessPercentage(tone);
@@ -20,8 +21,14 @@ function Horoscope({ tone, horoscope }) {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    if (resultRef.current) {
+      resultRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, []);
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-3xl relative z-10 mt-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-3xl relative z-10 mt-6" ref={resultRef}>
       {/* Message */}
       <div className="p-6">
         <h2 className="text-xl font-bold mb-4 text-purple-600">
