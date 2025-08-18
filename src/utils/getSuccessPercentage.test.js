@@ -1,26 +1,26 @@
 import { getSuccessPercentage } from "./getSuccessPercentage";
 
 describe("getSuccessPercentage", () => {
-  it("returns a number between 0–25 for rude", () => {
+  it("returns a number between 30–60 for rude", () => {
     for (let i = 0; i < 100; i++) {
       const val = getSuccessPercentage("rude");
-      expect(val).toBeGreaterThanOrEqual(0);
-      expect(val).toBeLessThanOrEqual(25);
+      expect(val).toBeGreaterThanOrEqual(30);
+      expect(val).toBeLessThanOrEqual(60);
     }
   });
 
-  it("returns a number between 25–75 for dramatic", () => {
+  it("returns a number between 61–90 for dramatic", () => {
     for (let i = 0; i < 100; i++) {
       const val = getSuccessPercentage("dramatic");
-      expect(val).toBeGreaterThanOrEqual(25);
-      expect(val).toBeLessThanOrEqual(75);
+      expect(val).toBeGreaterThanOrEqual(61);
+      expect(val).toBeLessThanOrEqual(90);
     }
   });
 
-  it("returns a number between 76–100 for motivational", () => {
+  it("returns a number between 91–100 for motivational", () => {
     for (let i = 0; i < 100; i++) {
       const val = getSuccessPercentage("motivational");
-      expect(val).toBeGreaterThanOrEqual(76);
+      expect(val).toBeGreaterThanOrEqual(91);
       expect(val).toBeLessThanOrEqual(100);
     }
   });

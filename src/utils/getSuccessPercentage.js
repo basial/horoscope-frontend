@@ -1,8 +1,8 @@
 export const getSuccessPercentage = (tone) => {
   const ranges = {
-      rude: [0, 25],
-      dramatic: [25, 75],
-      motivational: [76, 100]
+      rude: [30, 60],
+      dramatic: [61, 90],
+      motivational: [91, 100]
   };
 
   const [min, max] = ranges[tone] || [0, 100];
