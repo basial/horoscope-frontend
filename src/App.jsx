@@ -65,12 +65,12 @@ function App() {
 
       {/* Loading */}
       {loading && (
-        <div className="text-2xl text-gray-600 relative mt-6">
+        <div className="text-lg text-gray-600 relative mt-6">
           <p className="animate-pulse">Sprawdzam układ planetek...</p>
           <img
             src={alienImage}
             alt="Constellation"
-            className="absolute top-20 left-20 w-30 animate-bounce opacity-80"
+            className="absolute top-20 left-15 w-30 animate-bounce opacity-80"
           />
         </div>
       )}
@@ -82,7 +82,7 @@ function App() {
             className="mb-4 text-purple-700 hover:cursor-pointer hover:text-purple-600"
             onClick={getCandidatePrediction}
           >
-            Rekrutujesz? Kliknij tutaj, by sprawdzić, co planetki myślą o Twoim kandydacie!
+            * Rekrutujesz? Kliknij tutaj, by sprawdzić, co planetki myślą o Twoim kandydacie!
           </div>
 
           <Horoscope percentage={successPercentage} horoscope={horoscope} />
