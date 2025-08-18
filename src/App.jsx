@@ -78,14 +78,14 @@ function App() {
       {/* Horoscope result */}
       {!loading && horoscope && (
         <>
+          <Horoscope percentage={successPercentage} horoscope={horoscope} />
+
           <div
-            className="mb-4 text-purple-700 hover:cursor-pointer hover:text-purple-600"
+            className="mt-12 text-purple-700 hover:cursor-pointer hover:text-purple-600"
             onClick={getCandidatePrediction}
           >
             * Rekrutujesz? Kliknij tutaj, by sprawdzić, co planetki myślą o Twoim kandydacie!
           </div>
-
-          <Horoscope percentage={successPercentage} horoscope={horoscope} />
         </>
       )}
     </div>
