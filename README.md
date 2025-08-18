@@ -1,6 +1,6 @@
 # 🔮 Horoscope Generator
 
-![Tests](https://github.com/basial/horoscope-fontend/actions/workflows/tests.yml/badge.svg)
+![Tests](https://github.com/basial/horoscope-frontend/actions/workflows/tests.yml/badge.svg)
 
 A ✨ s m o l ✨ full-stack project built to test **Node.js** and **React**.  
 It provides a simple [**API**](https://github.com/basial/horoscope-api) that serves random horoscopes in different tones, and a [**frontend**](https://github.com/basial/horoscope-frontend) that displays them with your luck percentage animation.
