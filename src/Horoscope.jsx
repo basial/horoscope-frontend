@@ -1,13 +1,10 @@
 import { useState, useEffect, useRef } from "react";
-import { getSuccessPercentage } from "./utils/getSuccessPercentage";
 
-function Horoscope({ tone, horoscope }) {
+function Horoscope({ percentage, horoscope }) {
   const [displayedPercentage, setDisplayedPercentage] = useState(0);
   const resultRef = useRef(null);
 
   useEffect(() => {
-    const percentage = getSuccessPercentage(tone);
-
     let start = 0;
     const duration = 1000; // 1 second animation
     const stepTime = Math.max(Math.floor(duration/percentage), 10);
